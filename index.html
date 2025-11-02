@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Leap - Time Manipulation Puzzle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+ <link rel="stylesheet" href="styles.css"/>   
+
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="ui">
+        <div id="menuScreen">
+            <h1>QUANTUM LEAP</h1>
+            <p>Manipulate time and space to solve mind-bending puzzles.<br>
+            Travel between past, present, and future to overcome obstacles.</p>
+            <button class="menu-btn" id="startBtn">START GAME</button>
+        </div>
+        
+        <div id="gameOverScreen" class="hidden">
+            <h2>CONGRATULATIONS!</h2>
+            <p id="finalScore"></p>
+            <div>
+                <button class="menu-btn" id="restartBtn">RESTART</button>
+                <button class="menu-btn" id="exitBtn">EXIT</button>
+            </div>
+        </div>
+        
+        <div id="hud" class="hidden">
+            <div>Level: <span id="level">1</span></div>
+            <div>Score: <span id="score">0</span></div>
+        </div>
+        
+        <div id="timeIndicator" class="hidden">PRESENT</div>
+        
+        <div id="powerUps" class="hidden">
+            <div class="powerup-icon" title="Time Slow">⏱️</div>
+            <div class="powerup-icon" title="Time Speed">⚡</div>
+        </div>
+        
+        <div id="instructions" class="hidden">
+            WASD/Arrows: Move | SPACE: Jump | 1/2/3: Switch Time | E: Use Portal
+        </div>
+        
+        <div id="controls" class="hidden">
+            <button class="btn" id="pauseBtn">PAUSE</button>
+            <button class="btn" id="restartLevelBtn">RESTART LEVEL</button>
+        </div>
+    </div>
+
+ <script src="script.js"></script>   
+
+</body>
+</html>
